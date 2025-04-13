@@ -19,5 +19,31 @@
       "path": "/settings",
       "label": "Settings"
     }
+  ],
+  "allPages": [
+    {
+      "path": "/",
+      "name": "Home",
+      "description": "Welcome to our application",
+      "color": "bg-blue-100"
+    },
+    {
+      "path": "/pagination",
+      "name": "Pagination",
+      "description": "View your analytics and metrics",
+      "color": "bg-green-100"
+    },
+    {
+      "path": "/profile",
+      "name": "Profile",
+      "description": "Manage your personal information",
+      "color": "bg-purple-100"
+    },
+    {
+      "path": "/settings",
+      "name": "Settings",
+      "description": "Configure your preferences",
+      "color": "bg-yellow-100"
+    }
   ]
 }
