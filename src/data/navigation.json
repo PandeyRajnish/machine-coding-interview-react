@@ -1,0 +1,23 @@
+{
+  "navbarItems": [
+    {
+      "path": "/",
+      "label": "Home",
+      "exact": true
+    },
+    {
+      "path": "/pagination",
+      "label": "Pagination"
+    }
+  ],
+  "sidebarItems": [
+    {
+      "path": "/profile",
+      "label": "Profile"
+    },
+    {
+      "path": "/settings",
+      "label": "Settings"
+    }
+  ]
+}
