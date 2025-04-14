@@ -3,7 +3,7 @@ import Layout from './components/layout/Layout';
 import HomePage from './pages/HomePage';
 import TabForm from './pages/TabForm';
 import About from './pages/About';
-import Pagination from './pages/Pagination';
+import PaginationPage from './pages/PaginationPage';
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
           <Route index element={<HomePage />} />
           <Route path="about" element={<About />} />
           <Route path="tab-form" element={<TabForm />} />
-          <Route path="pagination" element={<Pagination />} />
+          <Route path="pagination" element={<PaginationPage />} />
         </Route>
       </Routes>
     </Router>
