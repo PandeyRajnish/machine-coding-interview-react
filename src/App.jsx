@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import HomePage from './pages/HomePage';
-import SettingsPage from './pages/SettingsPage';
 import TabForm from './pages/TabForm';
 import About from './pages/About';
+import Pagination from './pages/Pagination';
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
           <Route index element={<HomePage />} />
           <Route path="about" element={<About />} />
           <Route path="tab-form" element={<TabForm />} />
-          <Route path="settings" element={<SettingsPage />} />
+          <Route path="pagination" element={<Pagination />} />
         </Route>
       </Routes>
     </Router>

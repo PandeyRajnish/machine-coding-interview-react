@@ -21,8 +21,8 @@
       "label": "TabForm"
     },
     {
-      "path": "/settings",
-      "label": "Settings"
+      "path": "/pagination",
+      "label": "Pagination"
     }
   ],
   "allPages": [
@@ -39,9 +39,9 @@
       "color": "bg-purple-100"
     },
     {
-      "path": "/settings",
-      "name": "Settings",
-      "description": "Configure your preferences",
+      "path": "/pagination",
+      "name": "Pagination",
+      "description": "API-driven pagination logic",
       "color": "bg-yellow-100"
     }
   ]
