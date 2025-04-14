@@ -6,14 +6,19 @@
       "exact": true
     },
     {
-      "path": "/pagination",
-      "label": "Pagination"
+      "path": "/about",
+      "label": "About Us"
     }
   ],
   "sidebarItems": [
     {
-      "path": "/profile",
-      "label": "Profile"
+      "path": "/",
+      "label": "Home",
+      "exact": true
+    },
+    {
+      "path": "/tab-form",
+      "label": "TabForm"
     },
     {
       "path": "/settings",
@@ -28,14 +33,8 @@
       "color": "bg-blue-100"
     },
     {
-      "path": "/pagination",
-      "name": "Pagination",
-      "description": "View your analytics and metrics",
-      "color": "bg-green-100"
-    },
-    {
-      "path": "/profile",
-      "name": "Profile",
+      "path": "/tab-form",
+      "name": "TabForm",
       "description": "Manage your personal information",
       "color": "bg-purple-100"
     },

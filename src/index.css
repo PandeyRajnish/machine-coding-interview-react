@@ -1,1 +1,35 @@
 @import 'tailwindcss';
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.heading-container {
+  display: flex;
+}
+
+.heading {
+  padding: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.tab-body {
+  display: flex;
+  border: 1px solid black;
+  height: 200px;
+  padding: 5px;
+}
+
+.input {
+  border: 1px solid black;
+  padding: 2px;
+  /* margin: 5px; */
+}
+
+.error {
+  color: red;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
