@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import ProductCard from '../components/pagination/ProductCard';
+import { PAGE_SIZE } from '../constants';
+import Pagination from '../components/pagination/Pagination';
 
-const ProductCard = ({ image, title }) => {
-  return (
-    <div className="product-card">
-      <img src={image} alt={title} className="product-img" />
-      <span>{title}</span>
-    </div>
-  );
-};
-
-const PAGE_SIZE = 10; // Number of items per page
-
-const Pagination = () => {
+const PaginationPage = () => {
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
 
@@ -20,8 +12,6 @@ const Pagination = () => {
     const data = await response.json();
     setProducts(data.products);
   };
-
-  console.log(products);
 
   useEffect(() => {
     fetchData();
@@ -61,33 +51,16 @@ const Pagination = () => {
           />
         ))}
       </div>
-      <div className="pagination-conatainer">
-        <button
-          disabled={currentPage === 0}
-          className="page-number"
-          onClick={() => goToPrevPage()}
-        >
-          ◀
-        </button>
-        {[...Array(numberOfPages).keys()].map((n) => (
-          <button
-            className={`page-number ${n === currentPage ? 'active' : ''}`}
-            key={n}
-            onClick={() => handlePageChange(n)}
-          >
-            {n}
-          </button>
-        ))}
-        <button
-          disabled={currentPage === numberOfPages - 1}
-          className="page-number"
-          onClick={() => goToNextPage()}
-        >
-          ▶
-        </button>
-      </div>
+
+      <Pagination
+        goToNextPage={goToNextPage}
+        goToPrevPage={goToPrevPage}
+        handlePageChange={handlePageChange}
+        numberOfPages={numberOfPages}
+        currentPage={currentPage}
+      />
     </div>
   );
 };
 
-export default Pagination;
+export default PaginationPage;
