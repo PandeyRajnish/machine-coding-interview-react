@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import TabForm from './pages/TabForm';
 import About from './pages/About';
 import PaginationPage from './pages/PaginationPage';
+import InfiniteScroll from './pages/InfiniteScroll';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="tab-form" element={<TabForm />} />
           <Route path="pagination" element={<PaginationPage />} />
+          <Route path="infinite-scroll" element={<InfiniteScroll />} />
         </Route>
       </Routes>
     </Router>
