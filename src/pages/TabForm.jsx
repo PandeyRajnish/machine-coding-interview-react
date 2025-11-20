@@ -4,6 +4,7 @@ import Settings from '../components/tab-form/Settings';
 import { useState } from 'react';
 
 const TabForm = () => {
+  // state for managing the state globally
   const [data, setData] = useState({
     name: 'Rajnish',
     age: 27,
@@ -13,8 +14,11 @@ const TabForm = () => {
   });
 
   const [errors, setErrors] = useState({});
+
+  // state for managing the active tab
   const [activeTab, setActiveTab] = useState(0);
 
+  // config driven tab
   const tabs = [
     {
       name: 'Profile',
